@@ -41,7 +41,7 @@ echo $ids;
     echo "</tr>";
 
     $query = "SELECT id, name, price FROM products WHERE id IN ({$ids}) ORDER BY name";
-
+echo $query;
     $stmt = $con->prepare( $query );
     $stmt->execute();
 
