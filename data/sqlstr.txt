@@ -1,0 +1,12 @@
+CREATE TABLE IF NOT EXISTS `products` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(32) NOT NULL,
+  `price` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=4 ;
+
+--插入測試資料
+INSERT INTO `products` (`id`, `name`, `price`) VALUES
+(1, 'LG P880 4X HD', 336),
+(2, 'Google Nexus 4', 299),
+(3, 'Samsung Galaxy S4', 600);
