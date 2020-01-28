@@ -46,7 +46,7 @@ echo $query;
     $stmt->execute();
 
     $total_price=0;
-echo  'total_price:'.$total_price;
+
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         extract($row);
 
@@ -60,7 +60,7 @@ echo  'total_price:'.$total_price;
         echo "</td>";
         echo "</tr>";
 
-        $total_price+=$price;
+        $total_price+=$price;echo  'total_price:'.$total_price;
     }
 
     echo "<tr>";
