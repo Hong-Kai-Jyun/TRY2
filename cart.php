@@ -29,7 +29,7 @@ if(count($_SESSION['cart_items'])>0){
 
     // remove the last comma
     $ids = rtrim($ids, ',');
-
+echo $ids;
     //start table
     echo "<table class='table table-hover table-responsive table-bordered'>";
 
