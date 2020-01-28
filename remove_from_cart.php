@@ -9,5 +9,5 @@ $name = isset($_GET['name']) ? $_GET['name'] : "";
 unset($_SESSION['cart_items'][$id]);
 
 // redirect to product list and tell the user it was added to cart
-header('Location: cart.php?action=removed&id=' . $id . '&name=' . $name);
+header('Location: cart.php?action=removed&id=' . $id . '&name=' . $name);//action狀態設定給cart.php
 ?>

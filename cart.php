@@ -7,7 +7,7 @@ include 'layout_head.php';
 $action = isset($_GET['action']) ? $_GET['action'] : "";
 $name = isset($_GET['name']) ? $_GET['name'] : "";
 
-if($action=='removed'){
+if($action=='removed'){//action變數在remove_from_cart.php回傳網址時附帶上去
     echo "<div class='alert alert-info'>";
     echo "<strong>{$name}</strong> was removed from your cart!";
     echo "</div>";
@@ -45,7 +45,7 @@ echo $query;
     $stmt = $con->prepare( $query );
     $stmt->execute();
 
-    $total_price=0;
+    $total_price=0;//累計總金額
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         extract($row);
@@ -60,7 +60,7 @@ echo $query;
         echo "</td>";
         echo "</tr>";
 
-        $total_price+=$price;echo  'total_price:'.$total_price;
+        $total_price+=$price;   //echo  'total_price:'.$total_price; //累計總金額的意思
     }
 
     echo "<tr>";
