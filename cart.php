@@ -46,6 +46,7 @@ echo $query;
     $stmt->execute();
 
     $total_price=0;
+echo  'total_price:'.$total_price;
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
         extract($row);
 
