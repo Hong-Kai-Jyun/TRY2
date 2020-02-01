@@ -39,5 +39,5 @@ include 'config/db_connect.php';
 <div class="container">
 
     <div class="page-header">
-        <h1><?php echo isset($page_title) ? $page_title : "The Code of a Ninja"; ?></h1>
+        <h1><?php echo isset($page_title) ? $page_title : "The Code of a Ninja"; ?></h1><!-- 標頭 -->
     </div>
